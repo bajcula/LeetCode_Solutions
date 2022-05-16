@@ -6,7 +6,6 @@ class Solution:
 #         for num in range(len(nums) + 1):
 #             if num not in numSet:
 #                 return num
-
         
         sumNums = 0
         sumAllNums = 0
