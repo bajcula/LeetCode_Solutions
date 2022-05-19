@@ -7,7 +7,7 @@ class Solution:
             total = 0
             for amount in row:
                 total += amount
-            if total > richest:
-                richest = total
+                
+            richest = max(richest, total)
                 
         return richest
