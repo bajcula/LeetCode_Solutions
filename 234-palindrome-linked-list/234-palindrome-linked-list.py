@@ -8,6 +8,7 @@ class Solution:
         
         arr = []
         curr = head
+        
         while curr:
             arr.append(curr.val)
             curr = curr.next
