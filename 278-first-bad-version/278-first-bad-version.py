@@ -6,12 +6,13 @@ class Solution:
         
         l, r = 1, n
         
-        
         while l < r:
+            
             pivot = (l + r) // 2
             
             if isBadVersion(pivot):
                 r = pivot
+                
             else:
                 l = pivot + 1
                 
