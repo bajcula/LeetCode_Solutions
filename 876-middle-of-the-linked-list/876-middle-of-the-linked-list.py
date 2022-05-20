@@ -6,11 +6,11 @@
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         
-        slow = head
-        fast = head
+        slower = head
+        faster = head
         
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
+        while faster and faster.next:
+            slower = slower.next
+            faster = faster.next.next
             
-        return slow
+        return slower
