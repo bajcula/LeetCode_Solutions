@@ -5,6 +5,7 @@ class Solution:
         l, r = 0, len(nums) - 1
         
         while l <= r:
+            
             pivot = (l + r) // 2
             
             if nums[pivot] > target:
