@@ -5,20 +5,7 @@ class Solution:
         result = []
         l = 0
         r = n - 1
-        
-#         for i in range(n - 1, -1, -1):
-            
-#             if abs(nums[l]) < abs(nums[r]):
-#                 number = nums[r]
-#                 r -= 1
-#             else:
-#                 number = nums[l]
-#                 l += 1
-                
-#             result[i] = number ** 2
-            
-#         return result
-    
+
         while l <= r:
 
             if abs(nums[l]) > abs(nums[r]):
