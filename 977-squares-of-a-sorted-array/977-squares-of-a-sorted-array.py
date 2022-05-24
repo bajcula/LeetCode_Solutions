@@ -9,12 +9,12 @@ class Solution:
         for i in range(n - 1, -1, -1):
             
             if abs(nums[l]) < abs(nums[r]):
-                numberToSquare = nums[r]
+                number = nums[r]
                 r -= 1
             else:
-                numberToSquare = nums[l]
+                number = nums[l]
                 l += 1
                 
-            result[i] = numberToSquare ** 2
+            result[i] = number ** 2
             
         return result
