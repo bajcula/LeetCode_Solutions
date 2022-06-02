@@ -12,7 +12,8 @@ class Solution:
             elif total < target:
                 l += 1
             else:
-                return [l+1, r+1]
+                return [l + 1, r + 1]
+            
         
         
         
