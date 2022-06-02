@@ -13,8 +13,8 @@ class Solution:
         res = []
         
         for i in range(len(freq) - 1, 0, -1):
-            for val in freq[i]:
-                res.append(val)
+            for value in freq[i]:
+                res.append(value)
                 if len(res) == k: return res
                 
         
