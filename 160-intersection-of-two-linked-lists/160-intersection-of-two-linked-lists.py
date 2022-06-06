@@ -43,13 +43,13 @@ class Solution:
             return None
         
         
-        a = getCount(headA)
-        b = getCount(headB)
+        A = getCount(headA)
+        B = getCount(headB)
         
-        if a < b:
-            a, b = b, a
+        if A < B:
+            A, B = B, A
             headA, headB = headB, headA
         
-        diff = a - b
+        diff = A - B
         
         return getTheNode(diff, headA, headB)
