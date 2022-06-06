@@ -46,9 +46,10 @@ class Solution:
         a = getCount(headA)
         b = getCount(headB)
         
-        if a > b:
-            diff = a - b
-            return getTheNode(diff, headA, headB)
-        else:
-            diff = b - a
-            return getTheNode(diff, headB, headA)
+        if a < b:
+            a, b = b, a
+            headA, headB = headB, headA
+        
+        diff = a - b
+        
+        return getTheNode(diff, headA, headB)
