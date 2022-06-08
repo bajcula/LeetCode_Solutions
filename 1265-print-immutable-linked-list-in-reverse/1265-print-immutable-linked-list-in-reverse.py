@@ -9,8 +9,11 @@
 class Solution:
     def printLinkedListInReverse(self, head: 'ImmutableListNode') -> None:
         
-        if head == None: return
+        stack = []
         
-        self.printLinkedListInReverse(head.getNext())
-        
-        head.printValue()
+        while head != None:
+            stack.append(head)
+            head = head.getNext()
+            
+        while stack:
+            stack.pop().printValue()
