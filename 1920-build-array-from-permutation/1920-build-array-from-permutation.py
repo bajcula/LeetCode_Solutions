@@ -8,7 +8,6 @@ class Solution:
 
 
         n = len(nums)
-
         for i in range(n):
             
             r = nums[i]
