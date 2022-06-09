@@ -4,14 +4,14 @@ class Solution:
         minHeap = []
         
         for x, y in points:
-            dist = (x ** 2) + (y ** 2)
-            minHeap.append([dist, x, y])
+            z = (x ** 2) + (y ** 2)
+            minHeap.append([z, x, y])
             
         heapq.heapify(minHeap)    
         res = []
         
         for i in range(k):
-            dist, x, y = heapq.heappop(minHeap)
+            z, x, y = heapq.heappop(minHeap)
             res.append([x, y])
             k -= 1
             
