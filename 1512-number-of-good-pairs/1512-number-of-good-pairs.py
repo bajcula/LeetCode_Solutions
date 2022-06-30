@@ -3,8 +3,8 @@ class Solution:
         
         res = 0
         
-        for i, num in enumerate(nums):
-            for j in range(i + 1, len(nums)):
+        for idx, num in enumerate(nums):
+            for j in range(idx + 1, len(nums)):
                 if num == nums[j]:
                     res += 1
                     
