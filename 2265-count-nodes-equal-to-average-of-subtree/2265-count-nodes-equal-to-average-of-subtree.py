@@ -7,7 +7,6 @@
 class Solution:
     def averageOfSubtree(self, root: Optional[TreeNode]) -> int:
         
-        
         def calculate_average(root):
             if root:
                 self.summ += root.val
