@@ -5,10 +5,13 @@ class Solution:
         
         while l <= r:
             pivot = (l + r) // 2
+            
             if nums[pivot] > target:
                 r = pivot - 1
+                
             elif nums[pivot] < target:
                 l = pivot + 1
+                
             else:
                 return pivot
     
