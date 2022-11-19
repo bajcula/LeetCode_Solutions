@@ -4,9 +4,8 @@ class Solution:
         n = len(nums)
         res = []
         currSum = sum(nums)
-        setSum = sum(set(nums))
         
         totalMissing = int(n * (n + 1) / 2 - currSum)
-        duplicateNum = currSum - setSum
+        duplicateNum = currSum - sum(set(nums))
    
         return [duplicateNum, duplicateNum + totalMissing]
